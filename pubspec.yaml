@@ -1,0 +1,40 @@
+name: expensewise
+description: "A new Flutter project."
+publish_to: 'none' # Keep this line if you do not wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.4.4 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.6  # For iOS icons
+  google_fonts: ^4.0.3      # For custom fonts
+  provider: ^6.0.0          # For state management (if needed)
+  shared_preferences: ^2.1.0 # For storing local data
+  image_picker: ^1.0.0      # For image picking functionality
+
+dev_dependencies:
+  flutter_native_splash: ^2.2.1  # Add flutter_native_splash dependency
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+
+  # Specify your assets, including the splash screen image
+  assets:
+    - assets/images/DM.png       # Your splash screen image
+    - assets/images/background.jpeg 
+    - assets/images/OTT.jpg
+    - assets/images/EMI.jpg
+    - assets/images/MAIN.png 
+    - assets/images/ELEC.png 
+
+flutter_native_splash:
+  color: "#000000"  # Background color (black)
+  image: assets/images/DM.png  # Path to your splash screen image
+  ios: true  # Use the iOS splash screen configuration
